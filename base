@@ -1,0 +1,64 @@
+# Imports
+import time
+import random
+from time import sleep
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+
+# Fluid Inputs
+fluidInput = input('What would you like to share? ')
+print('Ok, on it')
+
+
+# Static Inputs
+USERNAME = 'Your Email Here'
+PASSWORD = 'Your Password Here'
+
+
+# Presets
+now = time.time()
+timeDelay = random.randrange(2, 3)
+userHere = '//*[@id="login-email"]'
+passTheWord = '//*[@id="login-password"]'
+loginHere = '//*[@id="login-submit"]'
+shareSomething = '/html/body/div[4]/div[5]/div[2]/div/div/div/div/div[1]/div/div/div[1]/button'
+shareBox = '/html/body/div[4]/div[5]/div[2]/div/div/div/div/div[1]/div/div/div[2]/div/div[1]'
+postButton = '//*[@data-control-name="share.post"]'
+software = 'Abraham'
+version = '0.002'
+
+
+driver = webdriver.Firefox()
+driver.get('http://www.linkedin.com/')
+sleep((timeDelay - 1) + (timeDelay + 1))
+
+
+# Logging in
+userInput = driver.find_element(By.XPATH, userHere)
+userInput.send_keys(USERNAME)
+sleep(timeDelay)
+passInput = driver.find_element(By.XPATH, passTheWord)
+passInput.send_keys(PASSWORD)
+sleep(timeDelay)
+signInInput = driver.find_element(By.XPATH, loginHere)
+signInInput.click()
+sleep((timeDelay - 1) + (timeDelay + 1))
+
+
+# Status time
+shareElement = driver.find_element(By.XPATH, shareSomething)
+shareElement.click()
+sleep(timeDelay)
+shareHere = driver.find_element(By.XPATH, shareBox)
+shareHere.send_keys(fluidInput, software, version, Keys.RETURN)
+sleep(timeDelay)
+sendIt = driver.find_element(By.XPATH, postButton)
+sendIt.click()
+sleep(timeDelay)
+
+
+then = time.time()
+print('completed post'
+      'Runtime = ', then - now, ' seconds')
