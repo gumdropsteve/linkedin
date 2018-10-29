@@ -7,14 +7,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
-# Fluid Inputs
-fluidInput = input('What would you like to share? ')
-print('Ok, on it')
-
-
 # Static Inputs
 USERNAME = 'Your Email Here'
 PASSWORD = 'Your Password Here'
+
+
+# Fluid Inputs
+fluidInput = input('What would you like to share? ')
+print('Ok, on it')
 
 
 # Presets
@@ -30,6 +30,7 @@ software = 'Abraham'
 version = '0.002'
 
 
+# Que vámonos
 driver = webdriver.Firefox()
 driver.get('http://www.linkedin.com/')
 sleep((timeDelay - 1) + (timeDelay + 1))
