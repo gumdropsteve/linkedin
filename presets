@@ -1,0 +1,14 @@
+import random
+
+
+# XPATH & Etc (Presets)
+userHere = '//*[@id="login-email"]'
+software = 'Abraham'
+loginHere = '//*[@id="login-submit"]'
+postButton = '//*[@data-control-name="share.post"]'
+passTheWord = '//*[@id="login-password"]'
+shareSomething = '/html/body/div[4]/div[5]/div[2]/div/div/div/div/div[1]/div/div/div[1]/button'
+shareBox = '/html/body/div[4]/div[5]/div[2]/div/div/div/div/div[1]/div/div/div[2]/div/div[1]'
+version = '0.003'
+# TIME
+timeDelay = random.randrange(2, 3)
