@@ -1,10 +1,10 @@
 # postToLinkedIn
-Simple script to post to your LinkedIn feed
+Post to your LinkedIn feed from IDE, new input format (simplified for useability)
 
-Asks for status as input
+Running base ques input for status 
 
 Uses GeckoDriver, could be modified to run Chrome
 
 
 
-Small part of Abraham0.002 (prerelease general update 2)
+Input to Abraham 0.003
