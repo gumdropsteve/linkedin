@@ -1,8 +1,0 @@
-# LinkedIn Login (Static Inputs)
-USERNAME = 'Your Email'
-PASSWORD = 'Your Password'
-
-
-# IGNORE
-ll = USERNAME
-ii = PASSWORD

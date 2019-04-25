@@ -1,4 +1,5 @@
 import random
+"""TO BE DELETED"""
 from presetPostToLinkedIn import userHere, timeDelay, software, loginHere, postButton, passTheWord, \
     shareSomething, shareBox, version
 from loginPostToLinkedIn import ll, ii
