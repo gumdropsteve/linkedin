@@ -1,10 +1,16 @@
 # postToLinkedIn
-Post to your LinkedIn feed from IDE, new input format (simplified for useability)
+Post to your LinkedIn account from Terminal; ***new*** live input format (simplified for useability)
 
-Running base ques input for status 
+- About
+    - Running post.py ques input for status 
+    - Uses Gecko
+        - Could be modified to run Chrome or otherwise
+        - WebDriver is set by script, not by Class (LinkedOut) 
+- Other resources
+    - Setting up Selenium and GeckoDriver 
+        - https://medium.com/@warobson/selenium-and-geckodriver-on-mac-b411dbfe61bc 
+    - Xpaths in Selenium
+        - https://www.guru99.com/xpath-selenium.html 
 
-Uses GeckoDriver, could be modified to run Chrome
 
-
-
-Input to Abraham 0.003
+Input of Abraham 0.003
