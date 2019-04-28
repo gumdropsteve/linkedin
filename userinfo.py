@@ -1,4 +1,6 @@
-# LinkedIn Login (Static Inputs)
-user = '__OPT-OUT__'
-pwrd = '__OPT-OUT__'
+"""LinkedIn Login (Static Inputs)"""
 
+# email/phone (username) here
+user = '__OPT-OUT__'
+# login password here
+pwrd = '__OPT-OUT__'
