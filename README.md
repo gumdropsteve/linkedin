@@ -1,4 +1,5 @@
-# postToLinkedIn
+# LinkedIn
+
 Post to your LinkedIn account from Terminal; ***new*** live input format (simplified for useability)
 
 - About
