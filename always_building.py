@@ -1,19 +1,11 @@
+# packages
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+# ways and means
 from userinfo import user, pwrd
+from paths import login_page, user_box, pass_box, start_share_button, to_talk_about, post_button
 
-# xpath of email/phone input box
-user_box = "//*[@id='username']"
-# xpath of password input box
-pass_box = "//*[@id='password']"
-
-# css selector of 'start a post' button
-start_share_button = '.share-box__open'
-# css selector of post input box
-to_talk_about = '.mentions-texteditor__contenteditable' 
-# xpath of 'post' button
-post_button = '//*[contains(@class,"share-actions__primary-action")]'
 
 class LinkedOut:
 	'''
