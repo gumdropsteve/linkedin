@@ -67,7 +67,7 @@ class LinkedOut:
 		# identify and send password (& then return) to pwrd input box
 		driver.find_element_by_xpath(pass_box).send_keys(self.p, Keys.RETURN)
 		# give keys time to land and site a bit to process login request 
-		sleep(8)
+		sleep(5)
 
 	# regarding sharing the post 
 	def share_the_(self, post, link=False):
@@ -106,11 +106,11 @@ class LinkedOut:
 		# find and send status to 'Share a post' input box 
 		driver.find_element_by_css_selector(to_talk_about).send_keys(self.post)
 		# time for post to be typed out
-		sleep(5)
+		sleep(3)
 		# remember if there's a link
 		if link == True:
 			# add extra time if link in post (to load preview)
-			sleep(5)
+			sleep(7)
 
 		# locate and click 'Post' button
 		driver.find_element_by_xpath(post_button).click()
