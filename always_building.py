@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 # ways and means
 from userinfo import user, pwrd
-from paths import login_page, user_box, pass_box, start_share_button, to_talk_about, post_button
+from info import login_page, user_box, pass_box, start_share_button, to_talk_about, post_button, the_links
 
 
 class LinkedOut:
@@ -94,7 +94,7 @@ class LinkedOut:
 		sleep(1)
 
 		# what type of links do we see?
-		known_link_types = ['.com','.pdf','.org','.net','.gov']
+		known_link_types = the_links
 		# go through that list
 		for link_type in known_link_types:
 			# see if each is in the post
