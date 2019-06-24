@@ -2,6 +2,11 @@
 
 Post to your LinkedIn account from Terminal; ***new*** live input format (simplified for useability)
 
+<a href="https://github.com/SeleniumHQ/selenium" target="_blank">
+  <img src="https://img.shields.io/badge/built%20with-Selenium-yellow.svg" /></a>
+<a href="https://www.python.org/" target="_blank">
+  <img src="https://img.shields.io/badge/built%20with-Python3-red.svg" /></a>
+
 - About
     - Running post.py ques input for status 
     - Uses Gecko
